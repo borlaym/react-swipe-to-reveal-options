@@ -40,20 +40,6 @@
   }
 
   var Swipeable = React.createClass({ displayName: "Swipeable",
-    propTypes: {
-      onSwiped: React.PropTypes.func,
-      onSwipingUp: React.PropTypes.func,
-      onSwipingRight: React.PropTypes.func,
-      onSwipingDown: React.PropTypes.func,
-      onSwipingLeft: React.PropTypes.func,
-      onSwipedUp: React.PropTypes.func,
-      onSwipedRight: React.PropTypes.func,
-      onSwipedDown: React.PropTypes.func,
-      onSwipedLeft: React.PropTypes.func,
-      flickThreshold: React.PropTypes.number,
-      delta: React.PropTypes.number
-    },
-
     getInitialState: function getInitialState() {
       return {
         x: null,
@@ -188,26 +174,6 @@
 
   var SwipeToRevealOptions = React.createClass({
     displayName: "SwipeToRevealOptions",
-
-    propTypes: {
-      rightOptions: React.PropTypes.array,
-      leftOptions: React.PropTypes.array,
-      className: React.PropTypes.string,
-      actionThreshold: React.PropTypes.number,
-      visibilityThreshold: React.PropTypes.number,
-      transitionBackTimeout: React.PropTypes.number,
-      callActionWhenSwipingFarLeft: React.PropTypes.bool,
-      callActionWhenSwipingFarRight: React.PropTypes.bool,
-      transitionBackOnRightClick: React.PropTypes.bool,
-      transitionBackOnLeftClick: React.PropTypes.bool,
-      closeOthers: React.PropTypes.func,
-      onRightClick: React.PropTypes.func,
-      onLeftClick: React.PropTypes.func,
-      onReveal: React.PropTypes.func,
-      onClose: React.PropTypes.func,
-      maxItemWidth: React.PropTypes.number,
-      parentWidth: React.PropTypes.number
-    },
 
     getInitialState: function getInitialState() {
       return {
